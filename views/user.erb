@@ -1,0 +1,9 @@
+<html>
+<body>
+<h1><%= @user.name %></h1>    
+<div><%= @user.email %></div>
+TEAM: <a href="/team?id=<%= @user.team_id %>"><%= @user.team.name %></a>
+    
+</body>    
+    
+</html>

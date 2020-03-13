@@ -1,0 +1,26 @@
+<html>
+<body>
+    <h1><%= @team.name %></h1>
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Name</th>
+            
+        </tr>
+        <% @team.users.each do |user| %>
+            <tr>
+                <td><%= user.email %></td>
+                <td><%= user.name %></td>
+            </tr>
+             
+        <% end %>    
+    </table>
+    
+    
+    
+    
+</body>    
+    
+    
+    
+</html>
